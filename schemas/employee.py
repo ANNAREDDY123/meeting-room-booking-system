@@ -1,0 +1,15 @@
+from pydantic import (
+    BaseModel,
+    EmailStr
+)
+
+
+class EmployeeCreate(BaseModel):
+
+    name: str
+
+    email: EmailStr
+
+    department: str
+
+    role: str
